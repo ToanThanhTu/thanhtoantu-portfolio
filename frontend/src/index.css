@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    /* border: 0.5px solid black; */
+    @apply font-league-spartan;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1 {
+    @apply text-header-1;
+  }
+
+  h2 {
+    @apply text-header-2;
+  }
+
+  h3 {
+    @apply text-header-3;
+  }
+
+  h4 {
+    @apply text-header-4;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-sm px-4 py-2 rounded-sm font-semibold bg-primary-black text-white inline-block flex justify-center items-center;
+  }
+}
+
+.portfolio-width {
+  @apply m-auto w-3/4 max-w-screen-xl min-w-64 px-2;
+}

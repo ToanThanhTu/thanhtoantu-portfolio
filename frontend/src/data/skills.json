@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Programming Languages",
+    "content": "JavaScript, Java, SQL, TypeScript, Pega"
+  },
+  {
+    "name": "Frontend Development",
+    "content": "React, HTML, CSS, Material-UI, Context API, Axios, Fetch API, Tailwind CSS"
+  },
+  {
+    "name": "Backend Development",
+    "content": "Node.js, Express.js, RESTful APIs, MongoDB, Mongoose, Pega Platform"
+  },
+  {
+    "name": "Tools",
+    "content": "Git, GitHub, VS Code, IntelliJ IDEA, Postman, Jira, Azure DevOps, Microsoft Tools"
+  }
+]

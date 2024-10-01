@@ -1,0 +1,22 @@
+[
+  {
+    "name": "ToDo App",
+    "description": "ToDo App is a simple web application that allows users to manage their todo list, with supporting features like categories and statuses.",
+    "url": "https://todoapp-backend.fly.dev"
+  },
+  {
+    "name": "Drum Machine",
+    "description": "This Drum Machine App is a fun and interactive web application built with React and powered by Vite for an efficient development experience. It allows users to create beats and rhythms on-the-fly using their keyboard or mouse.",
+    "url": "https://toanthanhtu.github.io/drum-machine/"
+  },
+  {
+    "name": "Markdown Previewer",
+    "description": "This project is a Markdown Previewer built using React and the 'marked' library. It allows users to input Markdown text in an editor and see a live preview of the rendered HTML.",
+    "url": "https://toanthanhtu.github.io/markdown-previewer/"
+  },
+  {
+    "name": "Pokemon Search App",
+    "description": "The Pokemon Search App is a simple web application that allows users to search for their favorite Pokémon and display detailed information about them, including stats, types, and images. ",
+    "url": "https://toanthanhtu.github.io/pokemon-search-app/"
+  }
+]
