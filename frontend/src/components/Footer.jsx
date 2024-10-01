@@ -9,9 +9,9 @@ function Footer() {
           </a>
         </p>
         <p>
-          16th July 2024 |{" "}
+          2024 |{" "}
           <a
-            href="https://github.com/ToanThanhTu/thanhtoantu-portfolio-vite"
+            href="https://github.com/ToanThanhTu/thanhtoantu-portfolio"
             target="_blank"
           >
             Source Code
