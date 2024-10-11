@@ -5,6 +5,8 @@ const errorHandler = (error, request, response, next) => {
     return response.status(400).json({
       error: error.message,
     });
+  } else if (error.name === "MongoServerError") {
+    return response.status(400).json({ error: "Mongo Server Error" });
   }
 
   next(error);

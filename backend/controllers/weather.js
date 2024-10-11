@@ -11,24 +11,20 @@ weatherRouter.get("/", async (request, response) => {
   const lon = "151.2082848";
   const url = `${baseUrl}&lat=${lat}&lon=${lon}`;
 
-  try {
-    const axiosResponse = await axios.get(url);
-    const weatherData = axiosResponse.data;
+  const axiosResponse = await axios.get(url);
+  const weatherData = axiosResponse.data;
 
-    // extract some necessary weather data for display
-    const responseWeatherData = {
-        name: weatherData.name,
-        temp: `${weatherData.main.temp}°C`,
-        description: weatherData.weather[0].main,
-        humidity: `${weatherData.main.humidity}%`,
-        wind: `${weatherData.wind.speed} m/s`,
-        imgUrl: `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`
-    };
-    
-    response.json(responseWeatherData);
-} catch (error) {
-    response.status(500).json({ error: 'Error fetching the weather data' });
-}
+  // extract some necessary weather data for display
+  const responseWeatherData = {
+    name: weatherData.name,
+    temp: `${weatherData.main.temp}°C`,
+    description: weatherData.weather[0].main,
+    humidity: `${weatherData.main.humidity}%`,
+    wind: `${weatherData.wind.speed} m/s`,
+    imgUrl: `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`,
+  };
+
+  response.json(responseWeatherData);
 });
 
 module.exports = weatherRouter;
