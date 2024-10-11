@@ -20,8 +20,8 @@ function Contacts() {
       <ul className="sm:flex sm:justify-center sm:space-x-4 mt-10 grid grid-cols-2 gap-4 m-auto w-fit">
         {contactMethods.map(({ name, icon, url }) => {
           return (
-            <li key={name} className="text-xl">
-              <a href={url} target="_blank" rel="noreferrer">
+            <li key={name} className="text-xl transition ease-in-out duration-300 hover:-translate-y-2 hover:scale-110">
+              <a href={url} target="_blank" rel="noreferrer" className="">
                 <p>
                   {iconMap[icon]}
                   {name}

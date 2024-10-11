@@ -10,6 +10,7 @@ export default {
           black: "#000000",
           cyan: "#2389da",
           grey: "#A5ABAF",
+          darkGray: "#525252"
         },
         secondary: {
           100: "#f0f7f0",

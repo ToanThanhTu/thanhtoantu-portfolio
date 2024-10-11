@@ -21,11 +21,12 @@ function NavBar() {
   return (
     <div className="fixed w-full bg-primary-white z-50 px-8">
       <nav className="flex h-14 items-center justify-between">
-        <img src={logo} alt="3T logo" className="flex-none size-10" />
+        <a href="#"><img src={logo} alt="3T logo" className="flex-none size-10" /></a>
+        
         <ul className="flex-auto hidden  sm:flex justify-end space-x-6 md:space-x-10 md:justify-center">
           {navItems.map(([text, id]) => (
             <li key={text}>
-              <a href={id}>{text}</a>
+              <a href={id} className="hover:underline underline-offset-8">{text}</a>
             </li>
           ))}
         </ul>
@@ -53,6 +54,7 @@ function NavBar() {
             </div>
           )}
         </div>
+
         <Weather />
       </nav>
     </div>

@@ -12,6 +12,7 @@
 
   html {
     scroll-behavior: smooth;
+    min-width: 320px;
   }
 
   h1 {
@@ -33,7 +34,7 @@
 
 @layer components {
   .btn {
-    @apply text-sm px-4 py-2 rounded-sm font-semibold bg-primary-black text-white inline-block flex justify-center items-center;
+    @apply text-sm px-4 py-2 rounded-sm font-semibold bg-primary-black text-white inline-block flex justify-center items-center hover:bg-primary-darkGray transition ease-in-out duration-300;
   }
 }
 
